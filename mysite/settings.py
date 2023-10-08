@@ -129,3 +129,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CSRF_TRUSTED_ORIGINS = ["http://" + os.getenv("domain_name"), "https://" + os.getenv("domain_name")]
+
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
