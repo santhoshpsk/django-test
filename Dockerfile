@@ -1,9 +1,9 @@
 FROM python
 
-RUN pip install django
+WORKDIR /opt/
 
 COPY . /opt/
 
-WORKDIR /opt/mysite/
+RUN pip install -r requirements.pip
 
 ENTRYPOINT ["python", "manage.py", "runserver", "0.0.0.0:8000"]
