@@ -137,6 +137,6 @@ SESSION_CACHE_ALIAS = 'default'
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.redis.RedisCache",
-        "LOCATION": "redis://username:password@172.17.0.7:6379",
+        "LOCATION": "redis://172.17.0.7:6379",
     }
 }
