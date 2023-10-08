@@ -132,6 +132,8 @@ CSRF_TRUSTED_ORIGINS = ["http://" + os.getenv("domain_name"), "https://" + os.ge
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 
+SESSION_CACHE_ALIAS = 'default'
+
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.redis.RedisCache",
