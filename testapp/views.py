@@ -1,6 +1,6 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpRequest
 import os
 
 
-def index(request):
-    return HttpResponse("Instance name: ")
+def index(request: HttpRequest):
+    return HttpResponse("Headers: " + str(request.META))
