@@ -3,4 +3,4 @@ import os
 
 
 def index(request: HttpRequest):
-    return HttpResponse("Headers: " + str(request.META))
+    return HttpResponse("Headers: " + str(request.headers))
